@@ -8,6 +8,7 @@ import pandas as pd
 import torch
 import torch.nn.functional as F
 from sklearn.model_selection import StratifiedKFold
+from sklearn.model_selection import train_test_split
 
 from src.dataset import CoraCitationDataset
 from src.models import GAT, GCN, SAGE
@@ -97,20 +98,22 @@ def run(model_name="SAGE", k_folds=10):
     class_names = dataset.classes
     # print dataset statistics
     print(
-        """----Data statistics------'
+        """'----Dataset statistics------'
       #Edges %d
       #Nodes %d
       #Classes %d
+      #Features %d
         """
         % (
             graph.num_edges(),
             num_nodes,
             n_labels,
+            n_features,
         )
     )
     graph = dgl.add_self_loop(graph)
     skf = StratifiedKFold(n_splits=k_fold, shuffle=True, random_state=42)
-    X = torch.arange(num_nodes)
+    X = torch.tensor(list(dataset.idx_map.values()))
     y = node_labels.cpu()
     prediction_dict = {}
     accuracies = []
@@ -134,11 +137,16 @@ def run(model_name="SAGE", k_folds=10):
         opt = torch.optim.Adam(model.parameters(), lr=5e-3, weight_decay=5e-4)
         stopper = EarlyStopping(patience=20)
 
-        # intialize train and test masks based on train test split
+        # Split the training set further into train and validation sets
+        train, val = train_test_split(train, test_size=0.3, random_state=42)
+
+        # Initialize train, validation, and test masks based on train, validation, and test splits
         train_mask = torch.tensor([False] * num_nodes, dtype=torch.bool).to(device)
         train_mask[X[train]] = True
         val_mask = torch.tensor([False] * num_nodes, dtype=torch.bool).to(device)
-        val_mask[X[test]] = True
+        val_mask[X[val]] = True
+        test_mask = torch.tensor([False] * num_nodes, dtype=torch.bool).to(device)
+        test_mask[X[test]] = True
 
         # start model training
         for epoch in range(200):
@@ -156,7 +164,7 @@ def run(model_name="SAGE", k_folds=10):
                 _, val_acc = evaluate(
                     model, graph, node_features, node_labels, val_mask
                 )
-                if stopper.step(train_acc):
+                if stopper.step(val_acc):
                     break
                 print(
                     "Epoch {:03d} |  Loss {:.4f} | TrainAcc {:.4f} |"
@@ -167,10 +175,10 @@ def run(model_name="SAGE", k_folds=10):
                         val_acc,
                     )
                 )
-        pred_indices, val_acc = evaluate(
-            model, graph, node_features, node_labels, val_mask
+        pred_indices, test_acc = evaluate(
+            model, graph, node_features, node_labels, test_mask
         )
-        accuracies.append(val_acc)
+        accuracies.append(test_acc)
         predictions = gen_predictions(
             preds=pred_indices, idx_map=idx_map, node_idx=X[test], classes=class_names
         )
@@ -181,7 +189,7 @@ def run(model_name="SAGE", k_folds=10):
 
     # Print mean accuracy and standard deviation
     print(
-        f"Mean Validation Accuracy across {k_fold} folds: {mean_accuracy:.2f}  ± {std_accuracy:.2f}"
+        f"Mean Test Set Accuracy across {k_fold} folds: {mean_accuracy:.2f}  ± {std_accuracy:.2f}"
     )
 
     # save the prediciton file as a tsc file with <paper_id>, <predictions>

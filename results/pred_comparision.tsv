@@ -30,7 +30,7 @@ paper_id	subject	class_label
 242637	Neural_Networks	Neural_Networks
 1106492	Rule_Learning	Theory
 74975	Case_Based	Case_Based
-1152272	Neural_Networks	Probabilistic_Methods
+1152272	Neural_Networks	Neural_Networks
 100701	Case_Based	Case_Based
 66982	Neural_Networks	Neural_Networks
 13960	Reinforcement_Learning	Reinforcement_Learning
@@ -43,7 +43,7 @@ paper_id	subject	class_label
 16819	Probabilistic_Methods	Probabilistic_Methods
 273152	Genetic_Algorithms	Genetic_Algorithms
 237521	Neural_Networks	Neural_Networks
-1153703	Case_Based	Neural_Networks
+1153703	Case_Based	Theory
 32872	Reinforcement_Learning	Reinforcement_Learning
 284025	Neural_Networks	Neural_Networks
 218666	Case_Based	Neural_Networks
@@ -67,10 +67,10 @@ paper_id	subject	class_label
 1153784	Genetic_Algorithms	Genetic_Algorithms
 1481	Case_Based	Case_Based
 1153786	Probabilistic_Methods	Probabilistic_Methods
-13212	Neural_Networks	Reinforcement_Learning
+13212	Neural_Networks	Theory
 1111614	Case_Based	Case_Based
 5055	Theory	Theory
-4329	Probabilistic_Methods	Neural_Networks
+4329	Probabilistic_Methods	Probabilistic_Methods
 330148	Neural_Networks	Neural_Networks
 1105062	Reinforcement_Learning	Neural_Networks
 4330	Probabilistic_Methods	Neural_Networks
@@ -146,14 +146,14 @@ paper_id	subject	class_label
 44514	Neural_Networks	Genetic_Algorithms
 287787	Genetic_Algorithms	Genetic_Algorithms
 157401	Neural_Networks	Neural_Networks
-1154500	Case_Based	Theory
+1154500	Case_Based	Rule_Learning
 682666	Reinforcement_Learning	Reinforcement_Learning
 399173	Case_Based	Case_Based
 198866	Case_Based	Case_Based
 51834	Theory	Rule_Learning
 200630	Neural_Networks	Neural_Networks
 782486	Neural_Networks	Reinforcement_Learning
-1136393	Neural_Networks	Neural_Networks
+1136393	Neural_Networks	Probabilistic_Methods
 137849	Probabilistic_Methods	Probabilistic_Methods
 1153811	Rule_Learning	Rule_Learning
 24966	Theory	Neural_Networks
@@ -224,7 +224,7 @@ paper_id	subject	class_label
 1153166	Case_Based	Case_Based
 1153169	Rule_Learning	Theory
 38000	Rule_Learning	Rule_Learning
-1152448	Case_Based	Neural_Networks
+1152448	Case_Based	Theory
 1137140	Neural_Networks	Neural_Networks
 30895	Theory	Neural_Networks
 5966	Genetic_Algorithms	Theory
@@ -258,7 +258,7 @@ paper_id	subject	class_label
 17798	Case_Based	Case_Based
 400356	Neural_Networks	Neural_Networks
 10531	Neural_Networks	Neural_Networks
-1110390	Case_Based	Case_Based
+1110390	Case_Based	Neural_Networks
 714289	Probabilistic_Methods	Probabilistic_Methods
 733167	Neural_Networks	Neural_Networks
 81714	Case_Based	Genetic_Algorithms
@@ -344,7 +344,7 @@ paper_id	subject	class_label
 65074	Probabilistic_Methods	Probabilistic_Methods
 33895	Genetic_Algorithms	Genetic_Algorithms
 2440	Rule_Learning	Rule_Learning
-1717	Probabilistic_Methods	Neural_Networks
+1717	Probabilistic_Methods	Probabilistic_Methods
 249421	Neural_Networks	Neural_Networks
 3187	Probabilistic_Methods	Probabilistic_Methods
 591016	Rule_Learning	Rule_Learning
@@ -377,7 +377,7 @@ paper_id	subject	class_label
 85452	Theory	Theory
 1112686	Probabilistic_Methods	Probabilistic_Methods
 69418	Neural_Networks	Neural_Networks
-8224	Theory	Theory
+8224	Theory	Rule_Learning
 145315	Rule_Learning	Case_Based
 575077	Genetic_Algorithms	Genetic_Algorithms
 20850	Theory	Theory
@@ -469,7 +469,7 @@ paper_id	subject	class_label
 23070	Probabilistic_Methods	Probabilistic_Methods
 644448	Probabilistic_Methods	Probabilistic_Methods
 1112723	Neural_Networks	Neural_Networks
-31097	Case_Based	Case_Based
+31097	Case_Based	Rule_Learning
 6169	Reinforcement_Learning	Reinforcement_Learning
 1106172	Reinforcement_Learning	Reinforcement_Learning
 6170	Reinforcement_Learning	Reinforcement_Learning
@@ -499,13 +499,13 @@ paper_id	subject	class_label
 20942	Theory	Theory
 390894	Probabilistic_Methods	Probabilistic_Methods
 390896	Probabilistic_Methods	Probabilistic_Methods
-1125092	Reinforcement_Learning	Genetic_Algorithms
+1125092	Reinforcement_Learning	Reinforcement_Learning
 13656	Neural_Networks	Neural_Networks
 1116347	Reinforcement_Learning	Reinforcement_Learning
 13658	Neural_Networks	Neural_Networks
 114966	Neural_Networks	Neural_Networks
 120013	Neural_Networks	Neural_Networks
-1117089	Reinforcement_Learning	Neural_Networks
+1117089	Reinforcement_Learning	Theory
 57948	Theory	Theory
 334153	Theory	Theory
 160732	Rule_Learning	Rule_Learning
@@ -521,7 +521,7 @@ paper_id	subject	class_label
 6910	Neural_Networks	Neural_Networks
 180373	Neural_Networks	Neural_Networks
 6917	Rule_Learning	Rule_Learning
-358884	Theory	Probabilistic_Methods
+358884	Theory	Theory
 887	Genetic_Algorithms	Reinforcement_Learning
 180399	Neural_Networks	Neural_Networks
 358894	Theory	Probabilistic_Methods
@@ -606,7 +606,7 @@ paper_id	subject	class_label
 1132459	Neural_Networks	Neural_Networks
 1105574	Neural_Networks	Neural_Networks
 1133196	Genetic_Algorithms	Genetic_Algorithms
-307336	Neural_Networks	Neural_Networks
+307336	Neural_Networks	Theory
 906	Neural_Networks	Neural_Networks
 1131745	Neural_Networks	Neural_Networks
 1131748	Neural_Networks	Neural_Networks
@@ -661,7 +661,7 @@ paper_id	subject	class_label
 103482	Neural_Networks	Neural_Networks
 158614	Theory	Theory
 46468	Probabilistic_Methods	Neural_Networks
-71904	Neural_Networks	Neural_Networks
+71904	Neural_Networks	Theory
 80656	Neural_Networks	Neural_Networks
 29708	Neural_Networks	Neural_Networks
 1128839	Neural_Networks	Neural_Networks
@@ -707,8 +707,8 @@ paper_id	subject	class_label
 1152150	Neural_Networks	Probabilistic_Methods
 1117249	Theory	Theory
 25413	Rule_Learning	Rule_Learning
-1152162	Neural_Networks	Probabilistic_Methods
-241821	Neural_Networks	Neural_Networks
+1152162	Neural_Networks	Neural_Networks
+241821	Neural_Networks	Probabilistic_Methods
 350362	Theory	Theory
 1116530	Probabilistic_Methods	Neural_Networks
 61069	Genetic_Algorithms	Genetic_Algorithms
@@ -735,7 +735,7 @@ paper_id	subject	class_label
 1115886	Reinforcement_Learning	Reinforcement_Learning
 184157	Reinforcement_Learning	Reinforcement_Learning
 8594	Rule_Learning	Rule_Learning
-1152904	Neural_Networks	Probabilistic_Methods
+1152904	Neural_Networks	Neural_Networks
 1120211	Neural_Networks	Neural_Networks
 28350	Reinforcement_Learning	Reinforcement_Learning
 1152910	Reinforcement_Learning	Reinforcement_Learning
@@ -789,7 +789,7 @@ paper_id	subject	class_label
 37884	Probabilistic_Methods	Probabilistic_Methods
 37888	Probabilistic_Methods	Probabilistic_Methods
 1128997	Genetic_Algorithms	Genetic_Algorithms
-545647	Theory	Case_Based
+545647	Theory	Theory
 42207	Theory	Theory
 42209	Theory	Theory
 82920	Genetic_Algorithms	Genetic_Algorithms
@@ -857,7 +857,7 @@ paper_id	subject	class_label
 1127566	Probabilistic_Methods	Probabilistic_Methods
 1154459	Genetic_Algorithms	Genetic_Algorithms
 218682	Case_Based	Case_Based
-28447	Case_Based	Case_Based
+28447	Case_Based	Reinforcement_Learning
 1153736	Theory	Theory
 62634	Genetic_Algorithms	Genetic_Algorithms
 211432	Theory	Theory
@@ -868,7 +868,7 @@ paper_id	subject	class_label
 217984	Neural_Networks	Neural_Networks
 949217	Neural_Networks	Neural_Networks
 28473	Reinforcement_Learning	Reinforcement_Learning
-1104300	Probabilistic_Methods	Probabilistic_Methods
+1104300	Probabilistic_Methods	Neural_Networks
 1105033	Reinforcement_Learning	Reinforcement_Learning
 11093	Probabilistic_Methods	Neural_Networks
 696342	Neural_Networks	Neural_Networks
@@ -902,7 +902,7 @@ paper_id	subject	class_label
 1114502	Genetic_Algorithms	Genetic_Algorithms
 1107215	Case_Based	Case_Based
 83725	Genetic_Algorithms	Genetic_Algorithms
-84459	Theory	Neural_Networks
+84459	Theory	Case_Based
 642681	Probabilistic_Methods	Probabilistic_Methods
 445938	Probabilistic_Methods	Probabilistic_Methods
 1103676	Neural_Networks	Neural_Networks
@@ -936,7 +936,7 @@ paper_id	subject	class_label
 94641	Genetic_Algorithms	Genetic_Algorithms
 1153065	Genetic_Algorithms	Genetic_Algorithms
 1133469	Reinforcement_Learning	Reinforcement_Learning
-35070	Case_Based	Rule_Learning
+35070	Case_Based	Theory
 576257	Genetic_Algorithms	Neural_Networks
 368657	Neural_Networks	Neural_Networks
 1129018	Genetic_Algorithms	Genetic_Algorithms
@@ -968,7 +968,7 @@ paper_id	subject	class_label
 56119	Genetic_Algorithms	Genetic_Algorithms
 89547	Theory	Theory
 51831	Neural_Networks	Neural_Networks
-91038	Probabilistic_Methods	Neural_Networks
+91038	Probabilistic_Methods	Probabilistic_Methods
 96847	Genetic_Algorithms	Genetic_Algorithms
 521855	Probabilistic_Methods	Probabilistic_Methods
 594483	Genetic_Algorithms	Genetic_Algorithms
@@ -983,7 +983,7 @@ paper_id	subject	class_label
 62718	Case_Based	Genetic_Algorithms
 229635	Genetic_Algorithms	Genetic_Algorithms
 56167	Case_Based	Case_Based
-1119654	Case_Based	Case_Based
+1119654	Case_Based	Theory
 51879	Probabilistic_Methods	Case_Based
 10435	Case_Based	Case_Based
 137873	Probabilistic_Methods	Probabilistic_Methods
@@ -1018,7 +1018,7 @@ paper_id	subject	class_label
 14062	Genetic_Algorithms	Genetic_Algorithms
 1104449	Neural_Networks	Neural_Networks
 39474	Genetic_Algorithms	Genetic_Algorithms
-27895	Theory	Case_Based
+27895	Theory	Theory
 167670	Probabilistic_Methods	Theory
 1131345	Neural_Networks	Neural_Networks
 1131348	Neural_Networks	Neural_Networks
@@ -1039,7 +1039,7 @@ paper_id	subject	class_label
 133550	Neural_Networks	Neural_Networks
 145134	Neural_Networks	Neural_Networks
 1130653	Case_Based	Case_Based
-1130657	Case_Based	Case_Based
+1130657	Case_Based	Rule_Learning
 1104495	Neural_Networks	Neural_Networks
 133566	Neural_Networks	Neural_Networks
 133567	Neural_Networks	Neural_Networks
@@ -1087,7 +1087,7 @@ paper_id	subject	class_label
 1118286	Rule_Learning	Rule_Learning
 162664	Probabilistic_Methods	Probabilistic_Methods
 1109542	Probabilistic_Methods	Neural_Networks
-1116835	Neural_Networks	Neural_Networks
+1116835	Neural_Networks	Genetic_Algorithms
 1116839	Case_Based	Case_Based
 1103016	Neural_Networks	Neural_Networks
 1128425	Neural_Networks	Neural_Networks
@@ -1103,7 +1103,7 @@ paper_id	subject	class_label
 1128430	Case_Based	Case_Based
 51909	Rule_Learning	Case_Based
 1108834	Neural_Networks	Neural_Networks
-1128437	Theory	Neural_Networks
+1128437	Theory	Theory
 989397	Theory	Theory
 97645	Genetic_Algorithms	Genetic_Algorithms
 8832	Case_Based	Case_Based
@@ -1150,7 +1150,7 @@ paper_id	subject	class_label
 38845	Case_Based	Case_Based
 193931	Neural_Networks	Neural_Networks
 193932	Neural_Networks	Neural_Networks
-4553	Rule_Learning	Rule_Learning
+4553	Rule_Learning	Case_Based
 1116146	Case_Based	Case_Based
 85352	Genetic_Algorithms	Genetic_Algorithms
 261040	Case_Based	Case_Based
@@ -1259,9 +1259,9 @@ paper_id	subject	class_label
 66556	Genetic_Algorithms	Genetic_Algorithms
 1130808	Neural_Networks	Neural_Networks
 4649	Rule_Learning	Rule_Learning
-582343	Theory	Rule_Learning
+582343	Theory	Theory
 395075	Genetic_Algorithms	Genetic_Algorithms
-582349	Neural_Networks	Neural_Networks
+582349	Neural_Networks	Theory
 20833	Case_Based	Theory
 1131549	Genetic_Algorithms	Genetic_Algorithms
 58552	Neural_Networks	Neural_Networks
@@ -1270,7 +1270,7 @@ paper_id	subject	class_label
 77438	Probabilistic_Methods	Probabilistic_Methods
 4660	Theory	Theory
 66594	Theory	Theory
-66596	Rule_Learning	Case_Based
+66596	Rule_Learning	Rule_Learning
 314459	Neural_Networks	Neural_Networks
 1116268	Theory	Theory
 1103960	Genetic_Algorithms	Genetic_Algorithms
@@ -1311,7 +1311,7 @@ paper_id	subject	class_label
 9716	Theory	Theory
 174425	Theory	Neural_Networks
 416455	Genetic_Algorithms	Genetic_Algorithms
-18615	Rule_Learning	Theory
+18615	Rule_Learning	Rule_Learning
 127940	Neural_Networks	Neural_Networks
 1152663	Reinforcement_Learning	Reinforcement_Learning
 675649	Neural_Networks	Neural_Networks
@@ -1328,7 +1328,7 @@ paper_id	subject	class_label
 73162	Probabilistic_Methods	Probabilistic_Methods
 52835	Rule_Learning	Rule_Learning
 3220	Neural_Networks	Case_Based
-3223	Theory	Theory
+3223	Theory	Rule_Learning
 1129367	Genetic_Algorithms	Genetic_Algorithms
 1129368	Genetic_Algorithms	Genetic_Algorithms
 1129369	Genetic_Algorithms	Genetic_Algorithms
@@ -1348,7 +1348,7 @@ paper_id	subject	class_label
 80491	Neural_Networks	Neural_Networks
 561364	Probabilistic_Methods	Probabilistic_Methods
 20180	Case_Based	Case_Based
-245955	Reinforcement_Learning	Neural_Networks
+245955	Reinforcement_Learning	Reinforcement_Learning
 1102548	Case_Based	Rule_Learning
 1817	Genetic_Algorithms	Genetic_Algorithms
 31043	Neural_Networks	Neural_Networks
@@ -1394,7 +1394,7 @@ paper_id	subject	class_label
 647315	Genetic_Algorithms	Genetic_Algorithms
 33231	Probabilistic_Methods	Probabilistic_Methods
 1116328	Neural_Networks	Theory
-1104749	Genetic_Algorithms	Genetic_Algorithms
+1104749	Genetic_Algorithms	Theory
 594025	Genetic_Algorithms	Genetic_Algorithms
 315266	Probabilistic_Methods	Probabilistic_Methods
 643777	Neural_Networks	Neural_Networks
@@ -1436,7 +1436,7 @@ paper_id	subject	class_label
 318187	Rule_Learning	Rule_Learning
 1152714	Neural_Networks	Neural_Networks
 1154173	Probabilistic_Methods	Probabilistic_Methods
-300071	Probabilistic_Methods	Probabilistic_Methods
+300071	Probabilistic_Methods	Neural_Networks
 1120020	Reinforcement_Learning	Reinforcement_Learning
 423816	Genetic_Algorithms	Genetic_Algorithms
 1106966	Reinforcement_Learning	Reinforcement_Learning
@@ -1509,8 +1509,8 @@ paper_id	subject	class_label
 14431	Probabilistic_Methods	Probabilistic_Methods
 1132434	Neural_Networks	Neural_Networks
 648121	Neural_Networks	Neural_Networks
-582511	Theory	Case_Based
-688849	Neural_Networks	Neural_Networks
+582511	Theory	Theory
+688849	Neural_Networks	Probabilistic_Methods
 1997	Probabilistic_Methods	Theory
 1131728	Case_Based	Case_Based
 1106298	Theory	Theory
@@ -1540,14 +1540,14 @@ paper_id	subject	class_label
 1109185	Neural_Networks	Neural_Networks
 85688	Rule_Learning	Theory
 28202	Reinforcement_Learning	Reinforcement_Learning
-50807	Genetic_Algorithms	Genetic_Algorithms
+50807	Genetic_Algorithms	Theory
 379288	Case_Based	Case_Based
 1154229	Probabilistic_Methods	Probabilistic_Methods
 1109199	Genetic_Algorithms	Genetic_Algorithms
 118682	Probabilistic_Methods	Probabilistic_Methods
 153598	Reinforcement_Learning	Reinforcement_Learning
 1154251	Neural_Networks	Neural_Networks
-62417	Probabilistic_Methods	Probabilistic_Methods
+62417	Probabilistic_Methods	Neural_Networks
 1125909	Probabilistic_Methods	Probabilistic_Methods
 79809	Theory	Probabilistic_Methods
 739280	Neural_Networks	Neural_Networks
@@ -1588,11 +1588,11 @@ paper_id	subject	class_label
 46470	Theory	Theory
 46476	Rule_Learning	Rule_Learning
 1129570	Genetic_Algorithms	Genetic_Algorithms
-1071981	Reinforcement_Learning	Reinforcement_Learning
+1071981	Reinforcement_Learning	Genetic_Algorithms
 1129573	Genetic_Algorithms	Genetic_Algorithms
 39199	Neural_Networks	Neural_Networks
 12337	Neural_Networks	Neural_Networks
-29723	Probabilistic_Methods	Neural_Networks
+29723	Probabilistic_Methods	Probabilistic_Methods
 694759	Genetic_Algorithms	Genetic_Algorithms
 46491	Theory	Theory
 1128856	Rule_Learning	Rule_Learning
@@ -1637,7 +1637,7 @@ paper_id	subject	class_label
 656231	Case_Based	Case_Based
 14531	Case_Based	Case_Based
 1106370	Neural_Networks	Neural_Networks
-1109208	Genetic_Algorithms	Genetic_Algorithms
+1109208	Genetic_Algorithms	Theory
 1114398	Neural_Networks	Neural_Networks
 95188	Case_Based	Case_Based
 510718	Probabilistic_Methods	Probabilistic_Methods
@@ -1661,7 +1661,7 @@ paper_id	subject	class_label
 756061	Neural_Networks	Neural_Networks
 522338	Probabilistic_Methods	Probabilistic_Methods
 219239	Theory	Theory
-61073	Genetic_Algorithms	Neural_Networks
+61073	Genetic_Algorithms	Genetic_Algorithms
 262178	Genetic_Algorithms	Genetic_Algorithms
 686015	Neural_Networks	Neural_Networks
 1110024	Case_Based	Case_Based
@@ -1681,7 +1681,7 @@ paper_id	subject	class_label
 592826	Rule_Learning	Theory
 566664	Case_Based	Case_Based
 633030	Probabilistic_Methods	Probabilistic_Methods
-633031	Probabilistic_Methods	Probabilistic_Methods
+633031	Probabilistic_Methods	Neural_Networks
 686061	Theory	Neural_Networks
 592830	Rule_Learning	Rule_Learning
 573964	Genetic_Algorithms	Genetic_Algorithms
@@ -1720,7 +1720,7 @@ paper_id	subject	class_label
 202639	Neural_Networks	Neural_Networks
 141324	Genetic_Algorithms	Genetic_Algorithms
 294145	Rule_Learning	Rule_Learning
-1128927	Rule_Learning	Rule_Learning
+1128927	Rule_Learning	Theory
 561610	Probabilistic_Methods	Probabilistic_Methods
 561611	Probabilistic_Methods	Probabilistic_Methods
 147870	Neural_Networks	Neural_Networks
@@ -1764,7 +1764,7 @@ paper_id	subject	class_label
 753264	Theory	Theory
 1126044	Neural_Networks	Neural_Networks
 74920	Probabilistic_Methods	Probabilistic_Methods
-74921	Probabilistic_Methods	Probabilistic_Methods
+74921	Probabilistic_Methods	Neural_Networks
 1105718	Neural_Networks	Neural_Networks
 48764	Reinforcement_Learning	Genetic_Algorithms
 48768	Reinforcement_Learning	Genetic_Algorithms
@@ -1943,7 +1943,7 @@ paper_id	subject	class_label
 126926	Probabilistic_Methods	Probabilistic_Methods
 155277	Probabilistic_Methods	Probabilistic_Methods
 1128314	Genetic_Algorithms	Genetic_Algorithms
-1105887	Rule_Learning	Rule_Learning
+1105887	Rule_Learning	Case_Based
 1110209	Probabilistic_Methods	Probabilistic_Methods
 307656	Genetic_Algorithms	Genetic_Algorithms
 199571	Neural_Networks	Neural_Networks
@@ -1986,7 +1986,7 @@ paper_id	subject	class_label
 1153896	Genetic_Algorithms	Genetic_Algorithms
 1153899	Genetic_Algorithms	Genetic_Algorithms
 167656	Theory	Theory
-239829	Case_Based	Case_Based
+239829	Case_Based	Theory
 1104435	Probabilistic_Methods	Probabilistic_Methods
 187260	Case_Based	Case_Based
 231198	Neural_Networks	Neural_Networks
@@ -1996,7 +1996,7 @@ paper_id	subject	class_label
 504	Probabilistic_Methods	Probabilistic_Methods
 506	Probabilistic_Methods	Probabilistic_Methods
 228990	Neural_Networks	Neural_Networks
-228992	Neural_Networks	Neural_Networks
+228992	Neural_Networks	Theory
 1132073	Neural_Networks	Rule_Learning
 654326	Genetic_Algorithms	Genetic_Algorithms
 1116044	Probabilistic_Methods	Probabilistic_Methods
@@ -2006,7 +2006,7 @@ paper_id	subject	class_label
 1107319	Theory	Theory
 132821	Theory	Theory
 360028	Theory	Theory
-214472	Reinforcement_Learning	Theory
+214472	Reinforcement_Learning	Reinforcement_Learning
 646334	Probabilistic_Methods	Probabilistic_Methods
 653628	Rule_Learning	Rule_Learning
 1107325	Case_Based	Case_Based
@@ -2019,7 +2019,7 @@ paper_id	subject	class_label
 92589	Probabilistic_Methods	Probabilistic_Methods
 118260	Reinforcement_Learning	Reinforcement_Learning
 124828	Neural_Networks	Neural_Networks
-141596	Neural_Networks	Probabilistic_Methods
+141596	Neural_Networks	Neural_Networks
 197452	Neural_Networks	Neural_Networks
 646357	Probabilistic_Methods	Probabilistic_Methods
 1153106	Neural_Networks	Neural_Networks
@@ -2032,7 +2032,7 @@ paper_id	subject	class_label
 87417	Genetic_Algorithms	Genetic_Algorithms
 23545	Theory	Rule_Learning
 23546	Rule_Learning	Rule_Learning
-1113926	Neural_Networks	Neural_Networks
+1113926	Neural_Networks	Case_Based
 94713	Probabilistic_Methods	Probabilistic_Methods
 1107367	Case_Based	Case_Based
 987197	Theory	Theory
@@ -2073,11 +2073,11 @@ paper_id	subject	class_label
 135798	Case_Based	Case_Based
 1152490	Neural_Networks	Neural_Networks
 1109566	Theory	Neural_Networks
-1103038	Case_Based	Neural_Networks
+1103038	Case_Based	Case_Based
 177115	Case_Based	Case_Based
 523394	Probabilistic_Methods	Probabilistic_Methods
 1128453	Genetic_Algorithms	Genetic_Algorithms
-1109581	Probabilistic_Methods	Reinforcement_Learning
+1109581	Probabilistic_Methods	Probabilistic_Methods
 101660	Rule_Learning	Rule_Learning
 101662	Theory	Theory
 9581	Probabilistic_Methods	Probabilistic_Methods
@@ -2144,7 +2144,7 @@ paper_id	subject	class_label
 814836	Rule_Learning	Rule_Learning
 1119004	Neural_Networks	Neural_Networks
 1134320	Probabilistic_Methods	Probabilistic_Methods
-1116181	Theory	Reinforcement_Learning
+1116181	Theory	Case_Based
 1108167	Theory	Theory
 1108169	Neural_Networks	Neural_Networks
 49753	Probabilistic_Methods	Probabilistic_Methods
@@ -2254,7 +2254,7 @@ paper_id	subject	class_label
 459216	Genetic_Algorithms	Genetic_Algorithms
 20821	Rule_Learning	Rule_Learning
 178718	Genetic_Algorithms	Genetic_Algorithms
-1108209	Genetic_Algorithms	Reinforcement_Learning
+1108209	Genetic_Algorithms	Neural_Networks
 1112665	Neural_Networks	Neural_Networks
 1104647	Genetic_Algorithms	Genetic_Algorithms
 1140289	Neural_Networks	Neural_Networks
@@ -2299,7 +2299,7 @@ paper_id	subject	class_label
 1114838	Theory	Neural_Networks
 577227	Genetic_Algorithms	Genetic_Algorithms
 28026	Case_Based	Case_Based
-601561	Rule_Learning	Case_Based
+601561	Rule_Learning	Rule_Learning
 24476	Probabilistic_Methods	Probabilistic_Methods
 1026	Genetic_Algorithms	Genetic_Algorithms
 95642	Case_Based	Case_Based
@@ -2316,7 +2316,7 @@ paper_id	subject	class_label
 1106854	Neural_Networks	Neural_Networks
 210309	Theory	Theory
 801170	Genetic_Algorithms	Genetic_Algorithms
-251756	Genetic_Algorithms	Genetic_Algorithms
+251756	Genetic_Algorithms	Neural_Networks
 645870	Probabilistic_Methods	Probabilistic_Methods
 144679	Case_Based	Case_Based
 1138043	Theory	Theory
@@ -2385,7 +2385,7 @@ paper_id	subject	class_label
 1112767	Neural_Networks	Neural_Networks
 180301	Probabilistic_Methods	Probabilistic_Methods
 160705	Neural_Networks	Neural_Networks
-628458	Neural_Networks	Neural_Networks
+628458	Neural_Networks	Reinforcement_Learning
 628459	Neural_Networks	Neural_Networks
 1130915	Neural_Networks	Neural_Networks
 1116336	Probabilistic_Methods	Probabilistic_Methods
@@ -2414,7 +2414,7 @@ paper_id	subject	class_label
 118559	Reinforcement_Learning	Neural_Networks
 1154123	Neural_Networks	Neural_Networks
 1154124	Neural_Networks	Neural_Networks
-1126503	Case_Based	Neural_Networks
+1126503	Case_Based	Case_Based
 40583	Probabilistic_Methods	Probabilistic_Methods
 95719	Probabilistic_Methods	Probabilistic_Methods
 693143	Theory	Theory
@@ -2431,7 +2431,7 @@ paper_id	subject	class_label
 62329	Genetic_Algorithms	Neural_Networks
 36167	Reinforcement_Learning	Reinforcement_Learning
 6941	Rule_Learning	Rule_Learning
-245288	Reinforcement_Learning	Reinforcement_Learning
+245288	Reinforcement_Learning	Neural_Networks
 62333	Neural_Networks	Reinforcement_Learning
 189774	Probabilistic_Methods	Probabilistic_Methods
 1133846	Neural_Networks	Neural_Networks
@@ -2439,11 +2439,11 @@ paper_id	subject	class_label
 62347	Reinforcement_Learning	Neural_Networks
 267003	Neural_Networks	Case_Based
 1114992	Neural_Networks	Neural_Networks
-1112026	Neural_Networks	Neural_Networks
+1112026	Neural_Networks	Probabilistic_Methods
 1119295	Rule_Learning	Rule_Learning
 1111304	Reinforcement_Learning	Reinforcement_Learning
 964248	Probabilistic_Methods	Probabilistic_Methods
-45603	Reinforcement_Learning	Reinforcement_Learning
+45603	Reinforcement_Learning	Genetic_Algorithms
 1109830	Neural_Networks	Neural_Networks
 1152761	Genetic_Algorithms	Genetic_Algorithms
 62389	Case_Based	Case_Based
@@ -2472,7 +2472,7 @@ paper_id	subject	class_label
 578845	Genetic_Algorithms	Genetic_Algorithms
 68115	Case_Based	Case_Based
 293271	Reinforcement_Learning	Reinforcement_Learning
-63835	Case_Based	Reinforcement_Learning
+63835	Case_Based	Case_Based
 1919	Probabilistic_Methods	Probabilistic_Methods
 164	Theory	Theory
 293285	Theory	Reinforcement_Learning
@@ -2493,7 +2493,7 @@ paper_id	subject	class_label
 1132406	Neural_Networks	Neural_Networks
 28964	Probabilistic_Methods	Probabilistic_Methods
 308003	Rule_Learning	Rule_Learning
-47839	Reinforcement_Learning	Probabilistic_Methods
+47839	Reinforcement_Learning	Reinforcement_Learning
 753070	Theory	Theory
 563613	Neural_Networks	Neural_Networks
 1132416	Neural_Networks	Neural_Networks
@@ -2550,7 +2550,7 @@ paper_id	subject	class_label
 1118658	Theory	Theory
 263553	Neural_Networks	Neural_Networks
 1125953	Rule_Learning	Rule_Learning
-114308	Reinforcement_Learning	Case_Based
+114308	Reinforcement_Learning	Reinforcement_Learning
 630817	Neural_Networks	Neural_Networks
 687401	Neural_Networks	Neural_Networks
 594900	Genetic_Algorithms	Genetic_Algorithms
@@ -2638,8 +2638,8 @@ paper_id	subject	class_label
 252715	Rule_Learning	Rule_Learning
 4983	Genetic_Algorithms	Case_Based
 646837	Genetic_Algorithms	Genetic_Algorithms
-1139009	Neural_Networks	Neural_Networks
-252725	Rule_Learning	Rule_Learning
+1139009	Neural_Networks	Theory
+252725	Rule_Learning	Reinforcement_Learning
 593544	Genetic_Algorithms	Genetic_Algorithms
 299195	Neural_Networks	Reinforcement_Learning
 593559	Genetic_Algorithms	Genetic_Algorithms
@@ -2649,12 +2649,12 @@ paper_id	subject	class_label
 70520	Reinforcement_Learning	Reinforcement_Learning
 131122	Neural_Networks	Neural_Networks
 8591	Rule_Learning	Rule_Learning
-217852	Rule_Learning	Neural_Networks
+217852	Rule_Learning	Rule_Learning
 264347	Theory	Neural_Networks
 7867	Case_Based	Genetic_Algorithms
 27612	Theory	Theory
 1152917	Probabilistic_Methods	Probabilistic_Methods
-28359	Reinforcement_Learning	Reinforcement_Learning
+28359	Reinforcement_Learning	Theory
 103528	Case_Based	Case_Based
 46500	Theory	Theory
 27631	Case_Based	Reinforcement_Learning
