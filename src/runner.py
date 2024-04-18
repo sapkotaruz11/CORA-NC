@@ -7,24 +7,29 @@ import numpy as np
 import pandas as pd
 import torch
 import torch.nn.functional as F
-from sklearn.model_selection import StratifiedKFold
-from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+from sklearn.model_selection import StratifiedKFold, train_test_split
 
 from src.dataset import CoraCitationDataset
 from src.models import GAT, GCN, SAGE
 
 
-def perfromance_evaluations(truth_df, prediction_df):
+def performance_evaluations(truth_df, prediction_df):
+    # Merge truth and prediction DataFrames
     merged_df = pd.merge(truth_df, prediction_df, on="paper_id")
-    # Calculate the number of correct predictions
-    correct_predictions = (merged_df["subject"] == merged_df["class_label"]).sum()
-    # Calculate the total number of predictions
-    total_predictions = len(merged_df)
-    # Calculate accuracy
-    accuracy = round(correct_predictions / total_predictions, 2)
+
+    # Extract true labels and predicted labels
+    true_labels = merged_df["subject"]
+    predicted_labels = merged_df["class_label"]
+
+    # Calculate accuracy using sklearn's accuracy_score
+    accuracy = round(accuracy_score(true_labels, predicted_labels), 2)
+
     # Print the accuracy
-    print("Accuracy on complete dataset:", (accuracy * 100))
-    merged_df.to_csv("results/pred_comparision.tsv", sep="\t", index=False)
+    print("Accuracy on complete dataset:", accuracy * 100)
+
+    # Save the merged DataFrame
+    merged_df.to_csv("results/pred_comparison.tsv", sep="\t", index=False)
 
 
 class EarlyStopping:
@@ -64,6 +69,20 @@ class EarlyStopping:
 
 
 def evaluate(model, graph, features, labels, mask):
+    """
+    Evaluate the performance of a graph neural network model on a given dataset.
+
+    Args:
+        model (torch.nn.Module): The graph neural network model to evaluate.
+        graph (dgl.DGLGraph): The input graph.
+        features (torch.Tensor): The node features tensor.
+        labels (torch.Tensor): The ground truth node labels tensor.
+        mask (torch.Tensor): The mask indicating which nodes to evaluate.
+
+    Returns:
+        torch.Tensor: The predicted class indices.
+        float: The accuracy of the model on the masked nodes.
+    """
     model.eval()
     with torch.no_grad():
         logits = model(graph, features)
@@ -84,6 +103,16 @@ def gen_predictions(preds, idx_map, node_idx, classes):
 
 
 def run(model_name="SAGE", k_folds=10):
+    """
+    Train and evaluate a graph neural network model on a given dataset using k-fold cross-validation.
+
+    Args:
+        model_name (str, optional): The name of the GNN model to use. Defaults to "SAGE".
+        k_folds (int, optional): The number of folds for cross-validation. Defaults to 10.
+
+    Returns:
+        None
+    """
     model_name = model_name
     k_fold = k_folds
     dataset = CoraCitationDataset()
@@ -96,9 +125,10 @@ def run(model_name="SAGE", k_folds=10):
     num_nodes = graph.num_nodes()
     idx_map = dataset.idx_map
     class_names = dataset.classes
+    print("\n" + "-" * 50 + "\n")
     # print dataset statistics
     print(
-        """'----Dataset statistics------'
+        """----------Dataset statistics-------------
       #Edges %d
       #Nodes %d
       #Classes %d
@@ -119,7 +149,8 @@ def run(model_name="SAGE", k_folds=10):
     accuracies = []
     for fold, (train, test) in enumerate(skf.split(X, y)):
         # Reinitialize the model for each run
-        print(f"Starting fold : {fold}")
+        print("\n" + "-" * 50 + "\n")
+        print(f"Starting fold : {fold+1}")
         if model_name == "SAGE":
             model = SAGE(
                 in_feats=n_features,
@@ -187,6 +218,7 @@ def run(model_name="SAGE", k_folds=10):
     mean_accuracy = np.mean(accuracies)
     std_accuracy = np.std(accuracies)
 
+    print("\n" + "-" * 50 + "\n")
     # Print mean accuracy and standard deviation
     print(
         f"Mean Test Set Accuracy across {k_fold} folds: {mean_accuracy:.2f}  ± {std_accuracy:.2f}"
@@ -205,6 +237,7 @@ def run(model_name="SAGE", k_folds=10):
         os.makedirs(directory)
 
     prediction_df.to_csv(file_name, sep="\t", index=False)
-
+    print("\n" + "-" * 50 + "\n")
     print("Predictions saved successfully as TSV file at {}.".format(file_name))
-    perfromance_evaluations(dataset.truth_df, prediction_df)
+    print("\n" + "-" * 50 + "\n")
+    performance_evaluations(dataset.truth_df, prediction_df)
