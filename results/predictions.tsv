@@ -953,7 +953,7 @@ paper_id	class_label
 1130931	Neural_Networks
 141868	Case_Based
 502574	Case_Based
-1115677	Neural_Networks
+1115677	Theory
 577331	Genetic_Algorithms
 358887	Probabilistic_Methods
 197783	Theory
@@ -1030,7 +1030,7 @@ paper_id	class_label
 63549	Neural_Networks
 606479	Genetic_Algorithms
 73712	Neural_Networks
-1131414	Neural_Networks
+1131414	Probabilistic_Methods
 49720	Probabilistic_Methods
 1134348	Probabilistic_Methods
 596075	Case_Based
@@ -1088,7 +1088,7 @@ paper_id	class_label
 1152272	Neural_Networks
 13982	Theory
 1134865	Genetic_Algorithms
-28456	Genetic_Algorithms
+28456	Reinforcement_Learning
 248425	Genetic_Algorithms
 1481	Case_Based
 1153786	Probabilistic_Methods
@@ -1165,7 +1165,7 @@ paper_id	class_label
 184918	Neural_Networks
 16008	Probabilistic_Methods
 928873	Neural_Networks
-466170	Neural_Networks
+466170	Probabilistic_Methods
 1102873	Neural_Networks
 42221	Theory
 375825	Probabilistic_Methods
@@ -2611,7 +2611,7 @@ paper_id	class_label
 686030	Neural_Networks
 13885	Neural_Networks
 566653	Case_Based
-633030	Probabilistic_Methods
+633030	Neural_Networks
 633031	Neural_Networks
 1108597	Case_Based
 103515	Genetic_Algorithms

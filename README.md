@@ -41,7 +41,7 @@ We used 10 fold validation technique to divide data into 10 folds of train and t
 We trained the model for 200 epochs by minimizing the cross-entropy loss function. Early stopping is employed to prevent overfitting, monitoring validation accuracy and halt training if it does not improve for a set number of epochs. We extracted a small portion from the train set as validation set which was used to measure the validation accuracy and stop the training early if Early Stopping criteria wad met. At the end of each fold, model predictions were generated for the test set, and evaluated using accuracy metric. This process repeated for each fold, accumulating accuracies for subsequent analysis. Finally, we calculated the mean and standard deviation of accuracies across folds of data distribution, providing insights into model performance and variability.
 
 ### Inference
-As the entire dataset was divided into 10 folds training/test sets, each paper_id was guaranteed to fall once in the test set and the predictions for the paper_id were aquired from the test sets only.  The predictions for all the paper_ids were then saved in a predictions file as `predictions.tsv` in the results directory. Moreover, a file called `pred_comparision.tsv` containing both the prediction and the original label for all nodes is also stored in the results directory, where the subject is the true class and the node label is the predicted class for the paper.
+As the entire dataset was divided into 10 folds training/test sets, each paper_id was guaranteed to fall once in the test set and the predictions for the paper_id were aquired from the test sets only.  The predictions for all the paper_ids were then saved in a predictions file as `predictions.tsv` in the results directory. Moreover, a file called `pred_comparison.tsv` containing both the prediction and the original label for all nodes is also stored in the results directory, where the subject is the true class and the node label is the predicted class for the paper.
 
 ### Performace 
 The Accuracy on the entire dataset was found to be 89 % with the SAGE(default) model and (0.89  ± 0.02) averaged test accuracy with standard deviation over different runs.
@@ -49,7 +49,7 @@ The Accuracy on the entire dataset was found to be 89 % with the SAGE(default) m
 ### Execution
 The repository is structured following standard practice for a Python framework. The code is written following Python PEP-8 standards and validated using static analysis tools. 
 
-The experiments can be carried out using a single command. 
+The experiments can be carried out using a single command. The test experiments were carried out on Ubuntu 22.04 LTS using a NVIDIA RTX 3070 laptop GPU. 
  
 ## Installation Guide for the CORA-NC Framework
 
@@ -131,7 +131,7 @@ The number of folds should be greater or equal to 2.
 
 ### Evaluations
 
-If you wish to evaluate the perfromance without carrying out the experiments using the previous predicitons, run the command:
+If you wish to evaluate the perfromance without carrying out the experiments using the previous predictions, run the command:
 ```shell
 python evaluations.py
 ```
